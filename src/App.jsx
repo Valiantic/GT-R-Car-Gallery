@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
 import Card from './components/Card'
 import Header from './components/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row } from 'react-bootstrap'
+import './App.css'
 
 // IMAGES 
 import Mustang from './assets/images/mustang.jpg'
@@ -18,7 +18,6 @@ import Mclaren from './assets/images/mclaren.jpg'
 import Tuatara from './assets/images/tuatara.jpg'
 import Aston from './assets/images/aston_martin.jpg'
 import Nissan from './assets/images/nissan.jpg'
-import { object } from 'prop-types'
 
 
 

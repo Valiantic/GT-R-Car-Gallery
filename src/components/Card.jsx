@@ -24,7 +24,7 @@ const Card = ({ model, image, description, buttonText}) => {
         <div className='card-body'>
             <h1 className='card-title'>{model}</h1>
             <p className='card-text' style={textStyle}>{description}</p>
-            <button className='btn btn-primary'>{buttonText}</button>
+            <button className='btn btn-dark btn-lg'>{buttonText}</button>
 
         </div>
       
