@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Card from './components/Card'
+import CardComponent from './components/CardComponent'
 import Header from './components/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row } from 'react-bootstrap'
@@ -29,11 +29,12 @@ function App() {
     <>
       <Header/>
 
+       {/* 1 ROW 5 COLUMN CardComponentS */}
       <Container>
-        {/* GAP BETWEEN CARDS */}
+      
         <Row className='g-4'>
           <Col>
-          <Card
+          <CardComponent
           model='Ford Mustang'
           image={Mustang}
           description='America’s ultimate muscle car, featuring a supercharged 5.2L V8 producing 760 hp.'
@@ -42,7 +43,7 @@ function App() {
           />
           </Col>
           <Col>
-          <Card
+          <CardComponent
            model='Nissan GT-R'
            image={Nissan}
            description='Known as "Godzilla," this supercar packs a 3.8L twin-turbo V6 with 600 hp.'
@@ -52,7 +53,7 @@ function App() {
           />
           </Col>
           <Col>
-          <Card
+          <CardComponent
            model='Ferrari'
            image={Ferrari}
            description='America’s ultimate muscle car, featuring a supercharged 5.2L V8 producing 760 hp.'
@@ -62,7 +63,7 @@ function App() {
           />
           </Col>
           <Col>
-          <Card
+          <CardComponent
            model='Mclaren'
            image={Mclaren}
            description='The McLaren 765LT is a track-focused supercar with a 4.0L twin-turbo V8 producing 755 hp.'
@@ -72,7 +73,7 @@ function App() {
           />
           </Col>
           <Col>
-          <Card
+          <CardComponent
            model='Lamborghini'
            image={Lambo}
            description='The Lamborghini Aventador SVJ is a V12-powered supercar with 759 hp.'
@@ -84,7 +85,7 @@ function App() {
 
 
           <Col>
-          <Card
+          <CardComponent
            model='Porsche'
            image={Porsche}
            description='The Porsche 911 Turbo S is a 640 hp supercar with a 3.8L twin-turbo flat-six'
@@ -94,7 +95,7 @@ function App() {
           />
           </Col>
           <Col>
-          <Card
+          <CardComponent
            model='Bugatti'
            image={Bugatti}
            description='The Bugatti Chiron Super Sport is a 1,578 hp hypercar with an 8.0L quad-turbo W16.'
@@ -104,7 +105,7 @@ function App() {
           />
           </Col>
           <Col>
-          <Card
+          <CardComponent
            model='Aston Martin'
            image={Aston}
            description='The Aston Martin DBS Superleggera is a 715 hp grand tourer with a 5.2L twin-turbo V12.'
@@ -114,7 +115,7 @@ function App() {
           />
           </Col>
           <Col>
-          <Card
+          <CardComponent
            model='Koegnisegg'
            image={Koenisegg}
            description='The Koenigsegg Jesko Absolut is a 1,600 hp hypercar with a 5.0L twin-turbo V8.'
@@ -124,7 +125,7 @@ function App() {
           />
           </Col>
           <Col>
-          <Card
+          <CardComponent
            model='Tuatara'
            image={Tuatara}
            description='The SSC Tuatara is a 1,750 hp hypercar with a 5.9L twin-turbo V8.'
@@ -140,14 +141,14 @@ function App() {
       </Container>
 
 
-      {/*  1 ROW 2 COLUMN CARDS  */}
+      {/*  1 ROW 2 COLUMN CardComponentS  */}
   
       {/* <Container>
 
     
         <Row className='g-4  mb-4 d-flex justify-content-center'>
         <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
           model='Ford Mustang'
           image={Mustang}
           description='America’s ultimate muscle car, featuring a supercharged 5.2L V8 producing 760 hp.'
@@ -156,7 +157,7 @@ function App() {
           />
           </Col>
           <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
            model='Nissan GT-R'
            image={Nissan}
            description='Known as "Godzilla," this supercar packs a 3.8L twin-turbo V6 with 600 hp.'
@@ -166,7 +167,7 @@ function App() {
           />
           </Col>
           <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
            model='Ferrari'
            image={Ferrari}
            description='America’s ultimate muscle car, featuring a supercharged 5.2L V8 producing 760 hp.'
@@ -176,7 +177,7 @@ function App() {
           />
           </Col>
           <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
            model='Mclaren'
            image={Mclaren}
            description='The McLaren 765LT is a track-focused supercar with a 4.0L twin-turbo V8 producing 755 hp.'
@@ -186,7 +187,7 @@ function App() {
           />
           </Col>
           <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
            model='Lamborghini'
            image={Lambo}
            description='The Lamborghini Aventador SVJ is a V12-powered supercar with 759 hp.'
@@ -203,7 +204,7 @@ function App() {
         <Row className='g-4 d-flex justify-content-center'>
 
         <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
            model='Porsche'
            image={Porsche}
            description='The Porsche 911 Turbo S is a 640 hp supercar with a 3.8L twin-turbo flat-six'
@@ -213,7 +214,7 @@ function App() {
           />
           </Col>
           <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
            model='Bugatti'
            image={Bugatti}
            description='The Bugatti Chiron Super Sport is a 1,578 hp hypercar with an 8.0L quad-turbo W16.'
@@ -223,7 +224,7 @@ function App() {
           />
           </Col>
           <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
            model='Aston Martin'
            image={Aston}
            description='The Aston Martin DBS Superleggera is a 715 hp grand tourer with a 5.2L twin-turbo V12.'
@@ -233,7 +234,7 @@ function App() {
           />
           </Col>
           <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
            model='Koegnisegg'
            image={Koenisegg}
            description='The Koenigsegg Jesko Absolut is a 1,600 hp hypercar with a 5.0L twin-turbo V8.'
@@ -243,7 +244,7 @@ function App() {
           />
           </Col>
           <Col xs={12} sm={6} md={2}>
-          <Card
+          <CardComponent
            model='Tuatara'
            image={Tuatara}
            description='The SSC Tuatara is a 1,750 hp hypercar with a 5.9L twin-turbo V8.'

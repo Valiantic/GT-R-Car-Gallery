@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Card, Button } from 'react-bootstrap'
 
-const Card = ({ model, image, description, buttonText}) => {
+const CardComponent = ({ model, image, description, buttonText}) => {
 
   // STYLES
   const imageStyle = {
@@ -19,6 +20,7 @@ const Card = ({ model, image, description, buttonText}) => {
 
 
   return (
+    // USING DIV
     <div className='card' style={cardHeight}>
         <img src={image} className="card-top" alt="card image" style={imageStyle} />
         <div className='card-body'>
@@ -28,11 +30,22 @@ const Card = ({ model, image, description, buttonText}) => {
 
         </div>
       
-    </div>
+   </div>
+   // USING BOOTSTRAP CARD
+  //   <Card style={cardHeight}>
+  //   <Card.Img variant="top" src={image} style={imageStyle} />
+  //   <Card.Body>
+  //     <Card.Title>{model}</Card.Title>
+  //     <Card.Text>
+  //       {description}
+  //     </Card.Text>
+  //     <Button variant="primary">{buttonText}</Button>
+  //   </Card.Body>
+  // </Card>
   )
 }
 
-Card.propTypes = {
+CardComponent.propTypes = {
     model: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
@@ -40,11 +53,11 @@ Card.propTypes = {
     buttonText: PropTypes.string.isRequired,
 }
 
-Card.defaultProps = {
+CardComponent.defaultProps = {
    model: "No model",
    image: "No image",
    description: "No description",
    buttonText: "No button text",
 }
 
-export default Card
+export default CardComponent
