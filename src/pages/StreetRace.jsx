@@ -10,11 +10,16 @@ import Mustang from '../assets/images/mustang.jpg'
 import Mclaren from '../assets/images/mclaren.jpg'
 import Nissan from '../assets/images/nissan.jpg'
 
+import Header from '../components/Navbar';
+
 
 const StreetRace = () => {
   return (
     <>
-   <h1 className='display-1 mb-4 text-white'>Street Race</h1>
+
+    <Header/>
+
+   <h1 className='display-1 mt-5 mb-4 text-white'>Street Race</h1>
 
   {/* 1 ROW 2 COLUMN CardComponentS */}
   <Container>

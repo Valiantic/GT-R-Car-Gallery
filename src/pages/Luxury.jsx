@@ -14,11 +14,15 @@ import Bugatti from '../assets/images/bugatti.jpg'
 import Tuatara from '../assets/images/tuatara.jpg'
 import Aston from '../assets/images/aston_martin.jpg'
 
+import Header from '../components/Navbar';
+
 
 const Luxury = () => {
   return (
     <>
-   <h1 className='display-1 mb-4 text-white'>Luxury Cars</h1>
+    <Header/>
+
+   <h1 className='display-1 mt-5 mb-4 text-white'>Luxury Cars</h1>
 
   {/* 1 ROW 2 COLUMN CardComponentS */}
   <Container>

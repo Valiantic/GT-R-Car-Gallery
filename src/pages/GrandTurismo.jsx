@@ -1,5 +1,5 @@
 import CardComponent from '../components/CardComponent'
-import Header from '../components/Header'
+import Header from '../components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row } from 'react-bootstrap'
 import '../App.css'
@@ -22,10 +22,13 @@ import Nissan from '../assets/images/nissan.jpg'
 const GrandTurismo = () => {
   return (
     <>
+
+    <h1 className='display-1 mt-5 mb-1 text-white'>2024 GTR Cars</h1>
+
     <Header/>
 
   {/* 1 ROW 2 COLUMN CardComponentS */}
-  <Container>
+  <Container style={{ marginTop: '80px' }}>
 
  <Row className='g-4'>
    <Col>

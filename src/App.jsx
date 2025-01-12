@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import CardComponent from './components/CardComponent'
-import Header from './components/Header'
+import Header from './components/Header.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row } from 'react-bootstrap'
 import './App.css'
