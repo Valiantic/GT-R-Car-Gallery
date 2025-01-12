@@ -14,7 +14,7 @@ import Bugatti from '../assets/images/bugatti.jpg'
 import Tuatara from '../assets/images/tuatara.jpg'
 import Aston from '../assets/images/aston_martin.jpg'
 
-import Header from '../components/Navbar';
+import Header from '../components/Header';
 
 
 const Luxury = () => {

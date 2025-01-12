@@ -1,5 +1,5 @@
 import CardComponent from '../components/CardComponent'
-import Header from '../components/Navbar'
+import Header from '../components/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row } from 'react-bootstrap'
 import '../App.css'

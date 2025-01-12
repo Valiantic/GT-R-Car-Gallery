@@ -2,7 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import CardComponent from './components/CardComponent'
-import Header from './components/Header.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row } from 'react-bootstrap'
 import './App.css'
@@ -11,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import GTR from './pages/GrandTurismo.jsx';
 import StreetRace from './pages/StreetRace.jsx'
 import Luxury from './pages/Luxury.jsx'
+import Error from './pages/Error.jsx'
 
 function App() {
 
@@ -24,6 +24,7 @@ function App() {
         <Route path="/" element={<GTR/>}/>
         <Route path="/streetrace" element={<StreetRace/>}/>
         <Route path="/luxury" element={<Luxury/>}/>
+        <Route path="*" element={<Error/>}/>
       </Routes>
       </Router>
 

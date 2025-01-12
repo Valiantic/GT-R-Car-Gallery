@@ -10,7 +10,7 @@ import Mustang from '../assets/images/mustang.jpg'
 import Mclaren from '../assets/images/mclaren.jpg'
 import Nissan from '../assets/images/nissan.jpg'
 
-import Header from '../components/Navbar';
+import Header from '../components/Header';
 
 
 const StreetRace = () => {
