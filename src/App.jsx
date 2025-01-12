@@ -9,7 +9,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 import GTR from './pages/GrandTurismo.jsx';
-
+import StreetRace from './pages/StreetRace.jsx'
 
 function App() {
 
@@ -21,6 +21,7 @@ function App() {
       <Router>
       <Routes>
         <Route path="/" element={<GTR/>}/>
+        <Route path="/streetrace" element={<StreetRace/>}/>
       </Routes>
       </Router>
 
